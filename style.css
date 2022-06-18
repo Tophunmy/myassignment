@@ -17,14 +17,20 @@ li.dropdown{display:inline-block;}
 .dropdown:hover .dropdown-content{ display: block;}
 
 *{box-sizing: border-box;}
-.example input{box-sizing:border-box;border-radius:10px; float:left;padding:10px;border:30px;width:240px;background:#f1f1f1;}
-.example button{display:inline;float:right;width:60px;padding:10px; border-radius:10px; background:#000099;color:white;font-size:17px; border: 1px solid grey; border-left:none;cursor:pointer;}
+.flex{
+	display:flex;
+}
+.example{
+	display:flex;
+}
+.example input{box-sizing:border-box;border-radius:10px 0px 0px 10px; float:left;padding:10px;border:30px;width:240px;background:#f1f1f1;}
+.example button{display:inline;float:right;width:60px;padding:10px; border-radius:0px 10px 10px 0px; background:#000099;color:white;font-size:17px; border: 1px solid grey; border-left:none;cursor:pointer;}
 .example button: hover{background:#0b7dda;}
 .example::after{content: ""; clear: both; display:table;}
 
-.example2{width: 300px;}
-.example2 input {box-sizing:border-box; border-radius:10px; float: left; padding:10px;font-size:17px; border:20px; width:179px; background:#f1f1f1;}
-.example2 button{display: inline;float:right; border-width:80px;padding:10px; border-radius:5px; background:#000099;color:white;font-size:17px; border: 1px solid grey;cursor:pointer;}
+.example2{width: 800px; display:flex}
+.example2 input {box-sizing:border-box; border-radius:30px 0px 0px 30px; float: left; padding:20px;font-size:17px; border:20px; width:300px; background:#f1f1f1;}
+.example2 button{display: inline;float:right; border-width:80px;padding:5px 15px; border-radius:0px 30px 30px 0px; background:#000099;color:white;font-size:17px; border: 1px solid grey;cursor:pointer;}
 .example2 button: hover{background:#0b7dda;}
 .example2::after{content: ""; clear: both; display:table;}
 
